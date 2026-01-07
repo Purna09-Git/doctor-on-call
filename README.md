@@ -4,6 +4,7 @@
 
 ## Project Overview
 The driving force behind this project is improving access to healthcare services, particularly for those in underserved or rural locations. By utilizing modern digital communication, DoctorOnCall reduces wait times and facilitates smooth doctor-patient interactions through video and chat.
+<img width="1445" height="740" alt="Screenshot 2026-01-06 at 18 06 16" src="https://github.com/user-attachments/assets/f7f310d9-0bf4-46de-9a64-ca5c398c2027" />
 
 ## Key Features
 * **Online Appointment Booking:** A seamless system for patients to view doctor schedules and book slots in real-time.
