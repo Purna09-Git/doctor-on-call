@@ -5,14 +5,14 @@
 ## Project Overview
 The driving force behind this project is improving access to healthcare services, particularly for those in underserved or rural locations. By utilizing modern digital communication, DoctorOnCall reduces wait times and facilitates smooth doctor-patient interactions through video and chat.
 
-## ✨ Key Features
+## Key Features
 * **Online Appointment Booking:** A seamless system for patients to view doctor schedules and book slots in real-time.
 * **Remote Video Consultations:** Integrated video conferencing to allow diagnoses without physical travel.
 * **Live Chat Support:** A dedicated interface for patients to communicate with support agents for general queries.
 * **Doctor Dashboard:** A dynamic calendar and scheduling system for doctors to manage their availability.
 * **Secure Data Management:** Role-based access control and encryption to ensure patient and doctor data remains private and compliant.
 
-## 💻 Languages and Technologies Used
+## Languages and Technologies Used
 This project utilizes a modern technology stack to ensure performance, scalability, and security:
 
 ### Backend
