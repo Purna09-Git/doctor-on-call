@@ -35,11 +35,11 @@ This project utilizes a modern technology stack to ensure performance, scalabili
 
 Follow these steps to run the backend server locally:
 
-### 1. Prerequisites
+1. Prerequisites
 * Python 3.10+
 * MongoDB (Local or Atlas Cluster)
 
-### 2. Installation
+ 2. Installation
 Clone the repository and navigate to the backend directory:
 
 ```bash
