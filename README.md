@@ -24,14 +24,14 @@ This project utilizes a modern technology stack to ensure performance, scalabili
 * **MongoDB:** NoSQL database for flexible data storage.
 * **Motor:** Asynchronous Python driver for non-blocking database interactions.
 
-### Frontend (Planned)
+### Frontend (
 * **React / HTML / CSS:** For building a responsive user interface.
 
 ### Real-time Communication
 * **WebRTC:** For secure, peer-to-peer video conferencing.
 * **WebSockets:** For enabling live chat functionality.
 
-## 🚀 Getting Started
+## Getting Started
 
 Follow these steps to run the backend server locally:
 
@@ -48,7 +48,7 @@ cd doctor-on-call/backend
 ```
 3.Setup Virtual Environment
 
-# Create the environment
+Create the environment
 ```bash
 python3 -m venv venv
 
