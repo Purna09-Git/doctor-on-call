@@ -1,0 +1,17 @@
+@import url(app.css);
+
+.notif-section {
+  min-height: calc(100vh - 300px);
+  justify-content: flex-start;
+  padding-top: 2rem;
+}
+
+.disable-btn {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.disable-btn:hover {
+  transform: none;
+  background-color: var(--success) !important;
+}

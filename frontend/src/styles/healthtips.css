@@ -1,0 +1,117 @@
+@import url(app.css);
+
+.health-tips-section {
+  min-height: calc(100vh - 160px);
+  padding: 3rem 1rem;
+  background: linear-gradient(180deg, #f8fafc 0%, #e2e8f0 100%);
+}
+
+.health-tips-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tips-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.tips-header h1 {
+  font-size: 2.5rem;
+  background: var(--primary-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.5rem;
+}
+
+.tips-header p {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+}
+
+.category-filter {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.category-btn {
+  padding: 0.625rem 1.25rem;
+  border: 2px solid var(--light-gray);
+  border-radius: var(--border-radius-full);
+  background: white;
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+}
+
+.category-btn:hover, .category-btn.active {
+  background: var(--primary-gradient);
+  border-color: transparent;
+  color: white;
+}
+
+.tips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.tip-card {
+  background: white;
+  border-radius: var(--border-radius-xl);
+  padding: 2rem;
+  box-shadow: var(--shadow-lg);
+  transition: all var(--transition-normal);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.tip-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-xl);
+}
+
+.tip-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: var(--primary-gradient);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.tip-icon svg {
+  font-size: 1.75rem;
+  color: white;
+}
+
+.tip-content .tip-category {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background: rgba(79, 172, 254, 0.1);
+  color: var(--primary-blue);
+  border-radius: var(--border-radius-full);
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.tip-content h3 {
+  font-size: 1.25rem;
+  color: var(--text-primary);
+  margin-bottom: 0.75rem;
+}
+
+.tip-content p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}

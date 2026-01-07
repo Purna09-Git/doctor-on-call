@@ -1,0 +1,40 @@
+@import url(app.css);
+
+.error-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+}
+
+.error-page h1 {
+  font-size: 8rem;
+  font-weight: 900;
+  background: var(--primary-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+.error-page h2 {
+  font-size: 2rem;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.error-page p {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  max-width: 400px;
+  margin-bottom: 2rem;
+}
+
+.error-page .btn {
+  margin-top: 1rem;
+}

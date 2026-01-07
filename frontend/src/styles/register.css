@@ -1,0 +1,146 @@
+@import url(app.css);
+
+.register-section {
+  width: 100%;
+  min-height: 100vh;
+  padding: 4rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 50%, #f1f5f9 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.register-section::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -25%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(79, 172, 254, 0.15) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+.register-section::after {
+  content: '';
+  position: absolute;
+  bottom: -30%;
+  right: -20%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(102, 126, 234, 0.12) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+.register-container {
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  max-width: 450px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  padding: 3rem;
+  border-radius: var(--border-radius-xl);
+  box-shadow: var(--shadow-2xl);
+  position: relative;
+  z-index: 1;
+  animation: fadeInUp 0.6s ease;
+}
+
+.register-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: var(--primary-gradient);
+  border-radius: var(--border-radius-xl) var(--border-radius-xl) 0 0;
+}
+
+.form-heading {
+  font-size: 2rem;
+  text-align: center;
+  background: var(--primary-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.register-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.form-input,
+textarea,
+select {
+  width: 100%;
+  font-size: 1rem;
+  background: var(--off-white);
+  padding: 1rem 1.25rem;
+  border: 2px solid transparent;
+  border-radius: var(--border-radius-md);
+  font-family: var(--font-family);
+  color: var(--text-primary);
+  transition: all var(--transition-normal);
+}
+
+.form-input::placeholder {
+  color: var(--medium-gray);
+}
+
+.form-input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: var(--primary-blue);
+  background: white;
+  box-shadow: 0 0 0 4px rgba(79, 172, 254, 0.15);
+}
+
+.form-input:hover {
+  border-color: var(--light-gray);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.form-btn {
+  margin-top: 0.5rem;
+  width: 100%;
+  padding: 1rem;
+}
+
+.login-link {
+  color: var(--primary-blue);
+  font-weight: 600;
+  transition: var(--transition-fast);
+}
+
+.login-link:hover {
+  color: var(--accent-purple);
+  text-decoration: underline;
+}
+
+.register-container > p {
+  text-align: center;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 600px) {
+  .register-container {
+    width: 95%;
+    padding: 2rem 1.5rem;
+  }
+  .form-heading {
+    font-size: 1.75rem;
+  }
+}

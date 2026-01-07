@@ -1,0 +1,222 @@
+@import url(app.css);
+
+header {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  transition: all var(--transition-normal);
+}
+
+header.scrolled {
+  background: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
+}
+
+nav {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  align-items: center;
+}
+
+.nav-logo a {
+  font-size: 1.5rem;
+  font-weight: 800;
+  font-family: var(--font-display);
+  background: var(--primary-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  transition: var(--transition-normal);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav-logo a:hover {
+  transform: scale(1.02);
+}
+
+.nav-logo-icon {
+  width: 40px;
+  height: 40px;
+  background: var(--primary-gradient);
+  border-radius: var(--border-radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links a {
+  padding: 0.625rem 1rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+  font-size: 0.95rem;
+  border-radius: var(--border-radius-full);
+  transition: all var(--transition-normal);
+  position: relative;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background: var(--primary-gradient);
+  transition: var(--transition-normal);
+  border-radius: var(--border-radius-full);
+}
+
+.nav-links a:hover {
+  color: var(--primary-blue);
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+  width: 60%;
+}
+
+.nav-links a.active {
+  color: var(--primary-blue);
+}
+
+.nav-links .btn {
+  padding: 0.625rem 1.25rem;
+  font-size: 0.85rem;
+  margin-left: 0.5rem;
+}
+
+.nav-links .btn.btn-login {
+  background: transparent;
+  border: 2px solid var(--primary-blue);
+  color: var(--primary-blue);
+}
+
+.nav-links .btn.btn-login:hover {
+  background: var(--primary-blue);
+  color: white;
+}
+
+.nav-links .btn.btn-register {
+  background: var(--primary-gradient);
+  color: white;
+}
+
+.menu-icons {
+  display: none;
+  z-index: 1001;
+  cursor: pointer;
+}
+
+.menu-open,
+.menu-close {
+  font-size: 1.75rem;
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+
+.menu-open:hover,
+.menu-close:hover {
+  color: var(--primary-blue);
+  transform: scale(1.1);
+}
+
+@media (max-width: 1200px) {
+  nav {
+    padding: 1rem 1.5rem;
+  }
+  .nav-links { gap: 0.25rem; }
+  .nav-links a { padding: 0.5rem 0.75rem; font-size: 0.9rem; }
+}
+
+@media (max-width: 950px) {
+  .nav-links {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(135deg, var(--dark-navy) 0%, var(--medium-navy) 100%);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    transform: translateX(100%);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 999;
+  }
+
+  .nav-active .nav-links {
+    transform: translateX(0);
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .nav-links a {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.25rem;
+    padding: 1rem 2rem;
+  }
+
+  .nav-links a:hover {
+    color: var(--secondary-blue);
+  }
+
+  .nav-links a::after {
+    background: var(--secondary-blue);
+  }
+
+  .nav-links .btn {
+    margin: 0;
+    margin-top: 1rem;
+    padding: 0.875rem 2rem;
+    font-size: 1rem;
+  }
+
+  .nav-links .btn.btn-login {
+    border-color: var(--secondary-blue);
+    color: var(--secondary-blue);
+  }
+
+  .nav-links .btn.btn-login:hover {
+    background: var(--secondary-blue);
+    color: var(--dark-navy);
+  }
+
+  .menu-icons {
+    display: block;
+  }
+
+  .menu-close {
+    color: white;
+    position: fixed;
+    top: 1.5rem;
+    right: 1.5rem;
+  }
+}

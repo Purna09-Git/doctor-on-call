@@ -1,0 +1,54 @@
+@import url(app.css);
+
+.profile-container {
+  width: 100%;
+  max-width: 600px;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-same-row {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+}
+
+.profile-container .form-input {
+  width: 100%;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border: 4px solid white;
+  box-shadow: var(--shadow-lg);
+  transition: var(--transition-normal);
+}
+
+.profile-pic:hover {
+  transform: scale(1.05);
+  box-shadow: var(--shadow-xl);
+}
+
+.gohome {
+  font-size: 0.85rem;
+  padding: 0.625rem 1rem;
+}
+
+@media (max-width: 655px) {
+  .profile-container {
+    width: 90%;
+  }
+  .profile-pic {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 493px) {
+  .form-same-row {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,108 @@
+@import url(app.css);
+
+.sidebar-section {
+  background: var(--dark-gradient);
+  width: 280px;
+  min-height: 100vh;
+  box-shadow: 4px 0 20px rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.sidebar-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(100vh - 4rem);
+  padding: 1rem;
+  width: 100%;
+}
+
+.sidebar-container > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.sidebar-container ul > li,
+.logout-container {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem 1.25rem;
+  border-radius: var(--border-radius-md);
+  transition: all var(--transition-normal);
+  cursor: pointer;
+}
+
+.sidebar-container ul > li:hover,
+.logout-container:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateX(5px);
+}
+
+.sidebar-container ul > li.active {
+  background: rgba(79, 172, 254, 0.2);
+  border-left: 3px solid var(--secondary-blue);
+}
+
+.sidebar-container a,
+.logout-container p {
+  color: rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.sidebar-container a:hover,
+.logout-container p:hover {
+  color: var(--secondary-blue);
+}
+
+.sidebar-container ul > li svg,
+.logout-container svg {
+  font-size: 1.25rem;
+  color: var(--secondary-blue);
+}
+
+.logout-container {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 1.5rem;
+  margin-top: auto;
+}
+
+.logout-container:hover {
+  background: rgba(239, 68, 68, 0.2);
+}
+
+.logout-container:hover p,
+.logout-container:hover svg {
+  color: #fca5a5;
+}
+
+@media (max-width: 1024px) {
+  .sidebar-section {
+    width: 240px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar-section {
+    width: 220px;
+  }
+  .sidebar-container ul > li,
+  .logout-container {
+    padding: 0.875rem 1rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .sidebar-section {
+    width: 200px;
+  }
+}

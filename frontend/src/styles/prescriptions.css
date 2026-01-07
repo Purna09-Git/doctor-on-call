@@ -1,0 +1,145 @@
+@import url(app.css);
+
+.prescriptions-section {
+  min-height: calc(100vh - 160px);
+  padding: 3rem 1rem;
+}
+
+.prescriptions-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.prescriptions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.prescription-card {
+  background: white;
+  border-radius: var(--border-radius-xl);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-lg);
+  transition: all var(--transition-normal);
+}
+
+.prescription-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-xl);
+}
+
+.prescription-header {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.prescription-icon {
+  font-size: 2rem;
+  color: var(--primary-blue);
+}
+
+.prescription-header h3 {
+  font-size: 1.1rem;
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+}
+
+.prescription-date {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.prescription-doctor {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+}
+
+.medications-preview h4 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.medications-preview ul {
+  list-style: none;
+  padding: 0;
+}
+
+.medications-preview li {
+  padding: 0.375rem 0;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.prescription-actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.prescription-actions .btn {
+  flex: 1;
+  font-size: 0.85rem;
+  padding: 0.625rem 1rem;
+}
+
+.prescription-detail-modal {
+  background: white;
+  border-radius: var(--border-radius-xl);
+  padding: 2rem;
+  max-width: 600px;
+  width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.prescription-detail-modal h2 {
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+}
+
+.detail-section {
+  margin-bottom: 1.5rem;
+}
+
+.detail-section h4 {
+  color: var(--primary-blue);
+  margin-bottom: 0.5rem;
+}
+
+.detail-section p {
+  color: var(--text-secondary);
+}
+
+.medication-item {
+  background: var(--off-white);
+  padding: 1rem;
+  border-radius: var(--border-radius-md);
+  margin-bottom: 0.75rem;
+}
+
+.medication-item strong {
+  color: var(--text-primary);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.medication-item p {
+  margin: 0.25rem 0;
+  font-size: 0.9rem;
+}

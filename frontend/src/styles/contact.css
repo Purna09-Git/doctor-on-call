@@ -1,0 +1,45 @@
+@import url(app.css);
+
+.contact-section {
+  padding: 4rem 0;
+  background: linear-gradient(180deg, transparent 0%, rgba(79, 172, 254, 0.05) 100%);
+}
+
+.contact-container {
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  max-width: 500px;
+  background: white;
+  padding: 3rem;
+  border-radius: var(--border-radius-xl);
+  box-shadow: var(--shadow-xl);
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: var(--primary-gradient);
+}
+
+.contact h2 {
+  text-align: center;
+}
+
+.apply-doctor {
+  min-height: calc(100vh - 160px);
+  padding: 3rem 1rem;
+}
+
+@media (max-width: 600px) {
+  .contact-container {
+    width: 90%;
+    padding: 2rem 1.5rem;
+  }
+}
