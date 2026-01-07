@@ -1,72 +1,35 @@
-# Here are your Instructions
-# DoctorOnCall 
+# 🩺 DoctorOnCall
 
-**DoctorOnCall** is a modern telehealth platform designed to bridge the gap between patients and healthcare providers. [cite_start]It enables users to schedule appointments, participate in video consultations, and manage medical records securely from the comfort of their homes[cite: 6, 14].
+**DoctorOnCall** is a comprehensive telehealth platform designed to bridge the gap between patients and healthcare providers. In response to the need for remote healthcare solutions, this application enables secure, efficient, and accessible medical consultations from anywhere.
 
 ## 📖 Project Overview
-[cite_start]The rise in demand for telehealth services requires accessible, user-friendly solutions[cite: 4]. [cite_start]DoctorOnCall addresses this by providing a seamless interface for patients to connect with doctors, reducing wait times and improving access to healthcare in underserved locations[cite: 7, 8].
+The driving force behind this project is improving access to healthcare services, particularly for those in underserved or rural locations. By utilizing modern digital communication, DoctorOnCall reduces wait times and facilitates smooth doctor-patient interactions through video and chat.
 
 ## ✨ Key Features
-* [cite_start]**User Roles:** Secure login and management for Patients, Doctors, and Administrators[cite: 23].
-* [cite_start]**Appointment Scheduling:** Real-time booking system for doctor appointments[cite: 19].
-* [cite_start]**Doctor Dashboard:** specialized interface for doctors to manage availability, view appointments, and write prescriptions[cite: 89].
-* **AI Symptom Checker:** An intelligent tool to help patients assess symptoms before booking.
-* [cite_start]**Medical Records:** Secure storage for patient history, diagnoses, and prescriptions[cite: 23].
-* **Reviews & Ratings:** Patients can review doctors after consultations.
-* **Analytics:** Admin dashboard to track user growth and appointment statistics.
+* ** Online Appointment Booking:** A seamless system for patients to view doctor schedules and book slots in real-time.
+* ** Remote Video Consultations:** Integrated video conferencing to allow diagnoses without physical travel.
+* ** Live Chat Support:** A dedicated interface for patients to communicate with support agents for general queries.
+* ** Doctor Dashboard:** A dynamic calendar and scheduling system for doctors to manage their availability.
+* ** Secure Data Management:** Role-based access control and encryption to ensure patient and doctor data remains private and compliant.
 
 ## 🛠️ Tech Stack
-* **Backend:** Python, FastAPI
+* **Backend:** Python (FastAPI)
 * **Database:** MongoDB (Motor/AsyncIO)
-* **Authentication:** JWT (JSON Web Tokens) with BCrypt password hashing
-* **API Documentation:** Swagger UI / OpenAPI
-* [cite_start]**Frontend:** (Mention your frontend framework here, e.g., React/Angular) [cite: 108]
+* **Authentication:** JWT & BCrypt
+* **Frontend:** React / HTML / CSS (Planned)
+* **Real-time Communication:** WebRTC (Video) & WebSocket (Chat)
 
 ## 🚀 Getting Started
 
-### Prerequisites
-* Python 3.8+
-* MongoDB Cluster
+Follow these steps to run the backend server locally:
 
-### Installation
+### 1. Prerequisites
+* Python 3.10+
+* MongoDB (Local or Atlas Cluster)
 
-1.  **Clone the repository**
-    ```bash
-    git clone [https://github.com/yourusername/DoctorOnCall.git](https://github.com/yourusername/DoctorOnCall.git)
-    cd DoctorOnCall
-    ```
+### 2. Installation
+Clone the repository and navigate to the backend directory:
 
-2.  **Set up the Virtual Environment**
-    ```bash
-    python3 -m venv venv
-    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-    ```
-
-3.  **Install Dependencies**
-    ```bash
-    cd backend
-    pip install -r requirements.txt
-    ```
-
-4.  **Environment Variables**
-    Create a `.env` file in the `backend` directory:
-    ```env
-    DB_NAME=doctoroncall
-    JWT_SECRET=your_secret_key
-    MONGO_URL=your_mongodb_connection_string
-    ```
-
-5.  **Run the Server**
-    ```bash
-    uvicorn main:app --reload
-    ```
-    The API will be available at `http://127.0.0.1:8000/docs`.
-
-## 👥 Team Members
-* [cite_start]**Sahithya Edamalapati** - Requirement Gathering & Video Integration [cite: 97, 94]
-* [cite_start]**Ananya Pagadala** - UI Design & Chat System [cite: 98, 94]
-* [cite_start]**Shivani Thokala** - Backend Development & Scheduling [cite: 99, 94]
-* [cite_start]**Purna Venkata Sai Kiran Mummani** - Data Storage, Security & Testing [cite: 100, 94]
-
-## 📄 License
-[cite_start]This project is for educational purposes as part of the initial project proposal and plan[cite: 2].
+```bash
+git clone [https://github.com/YOUR-USERNAME/doctor-on-call.git](https://github.com/YOUR-USERNAME/doctor-on-call.git)
+cd doctor-on-call/backend
